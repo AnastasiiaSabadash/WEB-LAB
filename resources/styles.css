@@ -1,0 +1,129 @@
+:root { 
+  --Color-text-text: #303030; 
+  --Color-bg: #F1F1F1; 
+  --Color-icon-icon-success: #29845A; 
+  --Color-text-link-link: #0070F3; 
+  --Height-table-row: 44px; 
+  --Color-bg-fill-fill-success-secondary: #CDFEE1; 
+  --Color-text-text-success: #0C5132; 
+  --Color-border-border: #E3E3E3;
+  --Color-bg--cells: #fff;
+  --Color-box-shadow: #CCCCCC80; 
+} 
+
+body { 
+  background-color: var(--Color-bg);
+} 
+
+.tabs { 
+  display: flex;
+  align-items: center; /*текст по центру*/
+  padding: 6px 12px;
+  gap: 8px;            /*проміжки між елем.*/
+  height: 52px;
+  background-color: #fff;
+  color: #303030;
+  box-shadow: 5px 5px 5px #CCCCCC80; 
+  font-family: "Inter", sans-serif; 
+  font-size: 13px; 
+  border-radius: 4px; 
+  width: 700px; 
+  margin-bottom: 15px; 
+  table-layout: fixed; 
+} 
+
+.tabs > div:first-child { 
+  margin-left: 5px; 
+} 
+
+.page-heading { 
+  font-family: "Inter", sans-serif; 
+  font-size: 24px; 
+  font-weight: 700; 
+  line-height: 32px;
+  letter-spacing: -0,2px; 
+  color: #303030; 
+} 
+
+.table1 {
+  font-size: 13px;
+  background-color: #fff; 
+  border-radius: 8px; 
+  width: 700px; 
+  border-collapse: collapse;
+  box-shadow: 5px 5px 5px #CCCCCC80; 
+} 
+
+.table1 th, .table1 td {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 450;
+    color: #303030;
+    padding: 6px 12px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.table1 tr {
+  height: 44px;
+}
+
+.table1 th {
+  font-weight: 450;
+  text-align: left;
+}
+
+.action { 
+  display: inline-block; 
+  padding: 2px 8px; 
+  border-radius: 8px; 
+  font-family: "Inter", sans-serif; 
+  font-size: 13px; 
+  font-weight: 450; 
+  color: #29845A; 
+  background-color:#CDFEE1; 
+} 
+
+.draft1 { 
+  display: inline-block; 
+  padding: 2px 8px; 
+  border-radius: 8px;
+  font-family: "Inter", sans-serif; 
+  font-size: 13px; 
+  font-weight: 450;
+  color: #303030; 
+  background-color:var(--Color-bg); 
+} 
+
+.draft2 { 
+  display: inline-block; 
+  padding: 2px 8px; 
+  border-radius: 8px; 
+  font-family: "Inter", sans-serif; 
+  font-size: 13px; 
+  font-weight: 450;
+  color: #303030; 
+  background-color:var(--Color-bg); 
+} 
+
+.container .page-heading { 
+  margin-bottom: 15px; 
+} 
+
+.tab-active { 
+  color: #303030; 
+  border-bottom: 2px solid #0C5132; 
+  margin-bottom: 1px; 
+  display: inline-block; 
+}
+
+.content1 {
+  color: #0070F3; 
+}
+
+.content2 {
+  color: #0070F3; 
+}
+
+.content3 {
+  color: #0070F3;
+}
