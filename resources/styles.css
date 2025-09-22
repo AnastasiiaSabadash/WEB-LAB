@@ -8,7 +8,7 @@
   --Color-text-text-success: #0C5132; 
   --Color-border-border: #E3E3E3;
   --Color-bg--cells: #fff;
-  --Color-box-shadow: #CCCCCC80 
+  --Color-box-shadow: #CCCCCC80; 
 } 
 
 body { 
@@ -19,8 +19,8 @@ body {
   display: flex;
   align-items: center; /*текст по центру*/
   padding: 6px 12px;
-  gap: 8px;
-  height: 52px;            /*проміжки між елем.*/
+  gap: 8px;            /*проміжки між елем.*/
+  height: 52px;
   background-color: #fff;
   color: #303030;
   box-shadow: 5px 5px 5px #CCCCCC80; 
