@@ -1,346 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./resources/reset.css">
-    <link rel="stylesheet" href="./resources/styles.css">
-    <title>Formula</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./resources/styles.css" />
+    <link rel="stylesheet" href="./resources/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
     <div class="container">
-        <header class="header1">
-            <nav class="header-nav1">
-                <ul class="header-nav-ul1">
-                    <li class="header-nav-li1">
-                        <a href="/index.html" class="header-nav-link body-lg">Home</a>
-                    </li>
-                    <li class="header-nav-li">
-                        <a href="/setting.html" class="header-nav-link body-lg">
-                            Setting Name
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-controls1">
-                <button class="btn-secondary btn" aria-controls="discard">
-                    Discard
-                </button>
-                <button class="btn-primary btn disabled" aria-controls="save">
-                    Save
-                </button>
-                <button class="btn-primary btn disabled" aria-controls="create formula">
-                    Create Formula
-                </button>
-            </div>
-        </header>
-        <div class="formula-title-field input-field">
-            <span class="input-label body-lg">
-                Title
-            </span>
-            <input type="text" class="input body-md" placeholder="Setting Name">
+      <header class="wrapper">
+        <nav class="headers-wrapper">
+          <a href="index.html" class="headers">Home</a>
+          <a href="settings.html" class="headers">setting-name</a>
+          <a href="formula.html" class="headers">formula-name</a>
+        </nav>
+        <div class="btn-wrapper">
+          <button class="btn">Discard</button>
+          <button class="btn disabled" disabled>Save</button>
         </div>
-        <div>
-            <p>Oopsie, seems that you have no formulas yet</p>
-            <p>Create your first formula!</p>
+      </header>
+      <div class="input-wrapper">
+        <p class="title">Title</p>
+        <input type="text" class="input" placeholder="Setting Name" />
+      </div>
+      <div class="section">
+        <div class="formula">
+          <div class="formula-wrapper">
+            <h3 class="formula-text">Formula settings</h3>
+            <img
+              src="./images/icons/QuestionCircle.svg"
+              alt=""
+              class="formula-icon"
+            />
+          </div>
+          <div class="label">
+            <p class="label-text">Formula</p>
+            <input type="text" placeholder="X + Y" class="input" />
+            <p class="label-bottom-text">
+              X - cryptocurrency price, Y - product price
+            </p>
+          </div>
+          <div class="label">
+            <p class="label-text">Frequency</p>
+            <input type="text" placeholder="1000" class="input" />
+            <p class="label-bottom-text">
+              Cryptocurrency price update frequency
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="./images/icons/search-icon.svg"
+              alt="search icon"
+              class="box-icon"
+            />
+            <input type="text" placeholder="Search" class="input box-input" />
+            <p class="box-text">
+              Select crypto from the list or search the one you need
+            </p>
+            <ul class="box-list">
+              <li class="box-list-item">
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Bitcoin</p>
+              </li>
+              <li class="box-list-item">
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Ethereum</p>
+              </li>
+              <li class="box-list-item">
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Ripple</p>
+              </li>
+              <li class="box-list-item">
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Litecoin</p>
+              </li>
+            </ul>
+            <button class="box-btn">Save</button>
+          </div>
         </div>
-        <button class="plus-button">+</button>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Formulas</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>BTC increase each 2 sec for T-Shirts</td>
-                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFtqfdAJps8_UM-nyBZyO5v3906VmM-8AH9iNrVvhf6m0vYCRb" style="width:13px;height:13px;">
-                    <img src="assets/Edit.svg" alt="Edit icon">
-                </tr>
-                <tr>
-                    <td>BTC increase each 2 sec for T-Shirts</td>
-                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFtqfdAJps8_UM-nyBZyO5v3906VmM-8AH9iNrVvhf6m0vYCRb" style="width:13px;height:13px;">
-                    <img src="assets/Edit.svg" alt="Edit icon">
-                </tr>
-            </tbody>
-        <header class="header">
-            <nav class="header-nav">
-                <ul class="header-nav-ul">
-                    <li class="header-nav-li">
-                        <a href="/index.html" class="header-nav-link body-lg">settings</a>
-                    </li>
-                    <li class="header-nav-li">
-                        <a href="/setting.html" class="header-nav-link body-lg">
-                            setting-name
-                        </a>
-                    </li>
-                    <li class="header-nav-li">
-                        <a href="#" class="header-nav-link body-lg">
-                            formula-name
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-controls">
-                <button class="btn-secondary btn" aria-controls="discard">
-                    Discard
-                </button>
-                <button class="btn-primary btn disabled" aria-controls="save">
-                    Save
-                </button>
+        <div class="inner-section">
+          <div class="collections">
+            <h3 class="collections-text">Add collections</h3>
+            <img
+              src="./images/icons/arrow.svg"
+              alt="arrow"
+              class="arrow-icon"
+            />
+            <img
+              src="./images/icons/search-icon.svg"
+              alt="search icon"
+              class="collections-icon"
+            />
+            <input type="text" placeholder="Search" class="input box-input" /><ul class="box-list">
+              <li class="box-list-item">
+                <div class="checkbox-wrapper">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox" checked />
+                    <span class="line"></span>
+                  </label>
+                  <p class="box-list-item-text">2 selelected</p>
+                </div>
+              </li>
+              <li class="box-list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" checked />
+                  <span class="checkbox-checkmark"></span>
+                </label>
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Bitcoin</p>
+              </li>
+              <li class="box-list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="checkbox-checkmark"></span>
+                </label>
+
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Ethereum</p>
+              </li>
+              <li class="box-list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" checked />
+                  <span class="checkbox-checkmark"></span>
+                </label>
+                <img src="./images/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Ripple</p>
+              </li>
+            </ul>
+            <div class="collections-btn-wrapper">
+              <button class="collections-btn-cancel">Cancel</button>
+              <button class="collections-btn-save">Save</button>
             </div>
-        </header>
-        <div class="formula-title-field input-field">
-            <span class="input-label body-lg">
-                Title
-            </span>
-            <input type="text" class="input body-md" placeholder="formula-name">
-        </div>
-        <div class="formula-main">
-            <div class="formula-settings formula-column">
-                <div class="formula-settings-card">
-                    <div class="formula-heading">
-                        <h2 class="heading-lg">
-                            Formula settings
-                        </h2>
-                        <span class="formula-heading-icon">
-                            <img src="./assets/icon-question.svg" alt="question">
-                        </span>
-                    </div>
-                    <div class="input-field">
-                        <span class="input-label body-lg">
-                            Formula
-                        </span>
-                        <input type="text" class="input body-md" placeholder="X * Y">
-                        <p class="input-description body-md">                " X - cryptocurrency price, Y - product price "             </p>
-                    </div>
-                    <div class="input input-field">
-                        <span class="input-label body-lg">
-                            Frequency
-                        </span>
-                        <input type="text" class="input body-md" placeholder="1000" fdprocessedid="xwejo">
-                        <p class="input-description body-md">                 " Cryptocurrency price update frequency. In milliseconds (like 1000ms == 1s) "                 </p>
-                    </div>
+          </div>
+
+          <div class="collections">
+            <h3 class="collections-text">Add products</h3>
+            <img
+              src="./images/icons/arrow.svg"
+              alt="arrow"
+              class="arrow-icon"
+            />
+            <img
+              src="./images/icons/search-icon.svg"
+              alt="search icon"
+              class="collections-icon"
+            />
+            <input type="text" placeholder="Search" class="input box-input" />
+
+            <ul class="product-list">
+              <li class="product-list-item">
+                <div class="product-box">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox" checked />
+                    <span class="checkbox-checkmark"></span>
+                  </label><img src="./images/thumbnail.png" alt="thumbnail" />
+                  <p class="box-list-item-text">Product 1</p>
                 </div>
-                <div class="search-card" aria-controls="search-crypto">
-                    <div class="input-field input-field-search">
-                        <img class="input-field-search-icon" src="./assets/icon-search.svg" alt="search-icon">
-                        <input type="text" class="input body-md search-input" placeholder="Search" fdprocessedid="4gwgee">
-                        <p class="input-description search-input-description body-md">Select crypto from the list or search the one you need</p>
-                    </div>
-                    <div class="search results">
-                        <div class="search-result">
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="search-result-icon">
-                            <span class="search-result-name body-md-b">Bitcoin</span>
-                        </div>
-                        <div class="search-result">
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="search-result-icon">
-                            <span class="search-result-name body-md-b">Ethereum</span>
-                        </div>
-                        <div class="search-result">
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="search-result-icon">
-                            <span class="search-result-name body-md-b">Ripple</span>
-                        </div>
-                        <div class="search-result">
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="search-result-icon">
-                            <span class="search-result-name body-md-b">Litecoin</span>
-                        </div>
-                    </div>
-                    <button class="search-btn-save btn btn-primary" fdprocessedid="54plgm"> Save </button>
-                </div>
-            </div>
-        </div>
-        <div class="formula-collections formula-column">
-            <div class="formula-settings-card">
-                <div class="formula-heading">
-                    <h2 class="heading-lg"> Add collections </h2>
-                    <span class="formula-heading-icon formula-heading-icon-arrow"><img src="./assets/icon-arrow-top.svg" alt="arrow-top"></span>
-                </div>
-            </div>
-            <div class="formula-settings-card">
-                <div class="formula-heading">
-                    <h2 class="heading-lg"> Add products </h2>
-                    <span class="formula-heading-icon formula-heading-icon-arrow"><img src="./assets/icon-arrow-top.svg" alt="arrow-top"></span>
-                </div>
-            </div>
-            <div class="search-card" aria-controls="search-collections">
-                <div class="input-field input-field-search">
-                    <img class="input-field-search-icon" src="./assets/icon-search.svg" alt="search-icon">
-                    <input type="text" class="input body-md search-input" placeholder="Search" fdprocessedid="4gwgee">
-                </div>
-                <div class="selected-collections-input-field custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="selected" id="selected-collections-input" checked>
-                    <label class="custom-checkbox-label" for="selected-collections-input">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-minus.svg" alt="minus-icon" class="custom-checkbox-checkmark">                        
-                        </div>
-                        <span class="custom-checkbox-label-title body-md-b">
-                            " 2 selected "
-                        </span>
+                <ul class="variant-products">
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
                     </label>
+                    <img src="./images/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 1</p>
+                  </li>
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+                    <img src="./images/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 2</p>
+                  </li>
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+                    <img src="./images/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 3</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox" checked />
+                    <span class="checkbox-checkmark"></span>
+                  </label>
+
+                  <img src="./images/thumbnail.png" alt="thumbnail" />
+                  <p class="box-list-item-text">Product 2</p>
                 </div>
-                <div class="search-results">
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="selected"
-                    id="found-collection-1" checked>
-                    <label class="custom-checkbox-label" for="found-collection-1">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Collection 1 " 
-                            </span>
-                        </label>
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="selected"
-                    id="found-collection-2" checked>
-                    <label class="custom-checkbox-label" for="found-collection-2">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Collection 2 " 
-                            </span>
-                        </label>
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="selected"
-                    id="found-collection-3" checked>
-                    <label class="custom-checkbox-label" for="found-collection-3">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Collection 3 " 
-                            </span>
-                        </label>
-                    </div>
-                    <div class="formula-settings-card-controls">
-                        <button class="search-btn-cancel btn btn-secondary" aria-controls="cancel-selected-collections" fdprocessedid="phlvdr"> Cancel </button>
-                        <button class="search-btn-save btn btn-primary" aria-controls="save-selected-collections" fdprocessedid="1bpc9"> Save </button>
-                    </div>
-                </div>
-                <div class="search-results">
-                    <div class="search-result custom-checkbox-field">
-                        <input class="custom-checkbox-input" type="checkbox" name="products"
-                        id="found-product-1" checked>
-                        <label class="custom-checkbox-label" for="found-product-1">
-                            <div class="custom-checkbox">
-                                <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                            </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Product 1 " 
-                            </span>
-                        </label>
-                <div class="search-results">
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="products"
-                    id="found-variant-1" checked>
-                    <label class="custom-checkbox-label" for="found-variant-1">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Variant 1 " 
-                            </span>
-                        </label>
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="products"
-                    id="found-variant-2" checked>
-                    <label class="custom-checkbox-label" for="found-variant-2">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Variant 2 " 
-                            </span>
-                        </label>
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="products"
-                    id="found-variant-3" checked>
-                    <label class="custom-checkbox-label" for="found-variant-3">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Variant 3 " 
-                            </span>
-                        </label>
-                    </div>
-                    <div class="formula-settings-card-controls">
-                        <button class="search-btn-cancel btn btn-secondary" aria-controls="cancel-selected-collections" fdprocessedid="phlvdr"> Cancel </button>
-                        <button class="search-btn-save btn btn-primary" aria-controls="save-selected-collections" fdprocessedid="1bpc9"> Save </button>
-                    </div>
-                </div>
-                <div class="search-results">
-                    <div class="search-result custom-checkbox-field">
-                        <input class="custom-checkbox-input" type="checkbox" name="products"
-                        id="found-product-2" checked>
-                        <label class="custom-checkbox-label" for="found-product-2">
-                            <div class="custom-checkbox">
-                                <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                            </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Product 2 " 
-                            </span>
-                        </label>
-                <div class="search-results">
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="products"
-                    id="found-variant-1" checked>
-                    <label class="custom-checkbox-label" for="found-variant-1">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Variant 1 " 
-                            </span>
-                        </label>
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="products"
-                    id="found-variant-2" checked>
-                    <label class="custom-checkbox-label" for="found-variant-2">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Variant 2 " 
-                            </span>
-                        </label>
-                    <div class="search-result custom-checkbox-field">
-                    <input class="custom-checkbox-input" type="checkbox" name="products"
-                    id="found-variant-3" checked>
-                    <label class="custom-checkbox-label" for="found-variant-3">
-                        <div class="custom-checkbox">
-                            <img src="./assets/icon-checkmark.svg" alt="checkmark-icon" class="custom-checkbox-checkmark">
-                        </div>
-                            <img src="./assets/image-placeholder.jpg" alt="image-placeholder" class="custom-checkbox-label-image">
-                            <span class="custom-checkbox-label-title body-md-b"> 
-                                " Variant 3 " 
-                            </span>
-                        </label>
-                    </div>
-                    <div class="formula-settings-card-controls">
-                        <button class="search-btn-cancel btn btn-secondary" aria-controls="cancel-selected-collections" fdprocessedid="phlvdr"> Cancel </button>
-                        <button class="search-btn-save btn btn-primary" aria-controls="save-selected-collections" fdprocessedid="1bpc9"> Save </button>
-                    </div>
-                </div>
+                <ul class="variant-products">
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+                    <img src="./images/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 1</p>
+                  </li>
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+                    <img src="./images/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 2</p>
+                  </li>
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+                    <img src="./images/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 3</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="collections-btn-wrapper">
+              <button class="collections-btn-cancel">Cancel</button>
+              <button class="collections-btn-save">Save</button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-</html>   
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/styles.css" />
+    <link rel="stylesheet" href="./resourses/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="wrapper">
+        <nav class="headers-wrapper">
+          <a href="index.html" class="headers">Home</a>
+          <a href="settings.html" class="headers">Setting Name</a>
+        </nav>
+        <div class="btn-wrapper">
+          <button class="btn">Discard</button>
+          <button class="btn disabled" disabled>Save</button>
+          <a href="formula.html" class="btn-link">Create Formula</a>
+        </div>
+      </header>
+      <div class="input-wrapper">
+        <p class="title">Title</p>
+        <input type="text" class="input" placeholder="Setting Name" />
+      </div>
+      <div class="img-wrapper">
+        <img src="./images/chair.png" alt="chair" class="img" />
+        <p class="text">Oopsie, seems that you have no formulas yet</p>
+        <p class="little-text">Create your first formula!</p>
+        <a href="formula.html" class="btn-link">+</a>
+      </div>
+      <div class="formulas-wrapper">
+        <h3 class="h3">Formulas</h3>
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="list-link"
+              >BTC increase each 2 sec for T-Shirts</a
+            >
+            <div class="icons-wrapper">
+              <button class="list-btn">
+                <img src="./images/icons/edit.svg" alt="edit icon" />
+              </button>
+              <button class="list-btn">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link"
+              >BTC increase each 2 sec for T-Shirts</a
+            >
+            <div class="icons-wrapper">
+              <button class="list-btn">
+                <img src="./images/icons/edit.svg" alt="edit icon" />
+              </button>
+              <button class="list-btn">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
