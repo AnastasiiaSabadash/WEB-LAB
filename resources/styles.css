@@ -13,13 +13,19 @@
 
 body { 
   background-color: var(--Color-bg);
-} 
+}
+
+.container {
+  width: 100%;
+  max-width: 1376px;
+  margin: 0 auto;
+}
 
 .tabs { 
   display: flex;
   align-items: center; /*текст по центру*/
   padding: 6px 12px;
-  gap: 8px;            /*проміжки між елем.*/
+  gap: 8px;          /*проміжки між елем.*/
   height: 52px;
   background-color: #fff;
   color: #303030;
@@ -27,29 +33,30 @@ body {
   font-family: "Inter", sans-serif; 
   font-size: 13px; 
   border-radius: 4px; 
-  width: 700px; 
-  margin-bottom: 15px; 
+  width: 100%;
+  margin-bottom: 15px;  
   table-layout: fixed; 
-} 
+}
 
 .tabs > div:first-child { 
   margin-left: 5px; 
-} 
+}
 
 .page-heading { 
   font-family: "Inter", sans-serif; 
   font-size: 24px; 
   font-weight: 700; 
   line-height: 32px;
-  letter-spacing: -0,2px; 
+  letter-spacing: -0,2px;
+  text-align: left; 
   color: #303030; 
 } 
 
 .table1 {
   font-size: 13px;
   background-color: #fff; 
-  border-radius: 8px; 
-  width: 700px; 
+  border-radius: 8px;
+  width: 100%; 
   border-collapse: collapse;
   box-shadow: 5px 5px 5px #CCCCCC80; 
 } 
@@ -111,8 +118,8 @@ body {
 
 .tab-active { 
   color: #303030; 
-  border-bottom: 2px solid #0C5132; 
-  margin-bottom: 1px; 
+  border-bottom: 2px solid #0C5132;
+  margin-bottom: 1px;  
   display: inline-block; 
 }
 
