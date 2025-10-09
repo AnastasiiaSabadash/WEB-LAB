@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="./scss/styles.css" />
+<link rel="stylesheet" href="./resources/styles.css" />
     <link rel="stylesheet" href="./resources/reset.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -16,7 +16,7 @@
       <header class="wrapper">
         <nav class="headers-wrapper">
           <a href="index.html" class="headers">Home</a>
-          <a href="setting.html" class="headers">setting-name</a>
+          <a href="settings.html" class="headers">setting-name</a>
           <a href="formula.html" class="headers">formula-name</a>
         </nav>
         <div class="btn-wrapper">
@@ -232,6 +232,75 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/styles.css" />
+    <link rel="stylesheet" href="./resourses/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="wrapper">
+        <nav class="headers-wrapper">
+          <a href="index.html" class="headers">Home</a>
+          <a href="settings.html" class="headers">Setting Name</a>
+        </nav>
+        <div class="btn-wrapper">
+          <button class="btn">Discard</button>
+          <button class="btn disabled" disabled>Save</button>
+          <a href="formula.html" class="btn-link">Create Formula</a>
+        </div>
+      </header>
+      <div class="input-wrapper">
+        <p class="title">Title</p>
+        <input type="text" class="input" placeholder="Setting Name" />
+      </div>
+      <div class="img-wrapper">
+        <img src="./images/chair.png" alt="chair" class="img" />
+        <p class="text">Oopsie, seems that you have no formulas yet</p>
+        <p class="little-text">Create your first formula!</p>
+        <a href="formula.html" class="btn-link">+</a>
+      </div>
+      <div class="formulas-wrapper">
+        <h3 class="h3">Formulas</h3>
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="list-link"
+              >BTC increase each 2 sec for T-Shirts</a
+            >
+            <div class="icons-wrapper">
+              <button class="list-btn">
+                <img src="./images/icons/edit.svg" alt="edit icon" />
+              </button>
+              <button class="list-btn">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link"
+              >BTC increase each 2 sec for T-Shirts</a
+            >
+            <div class="icons-wrapper">
+              <button class="list-btn">
+                <img src="./images/icons/edit.svg" alt="edit icon" />
+              </button>
+              <button class="list-btn">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
