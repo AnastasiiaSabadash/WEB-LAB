@@ -23,6 +23,13 @@ body {
     gap: 27px;
   }
 }
+.index-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 650;
@@ -110,10 +117,29 @@ h1 {
 }
 
 .table-link {
+  font-size: 10px;
+  font-weight: 450;
+  line-height: 20px;
   color: #005bd3;
   padding-left: 8px;
 }
 
+@media (min-width: 425px) {
+  .table-link {
+    font-size: 13px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #005bd3;
+  }
+}
+@media (min-width: 768px) {
+  .table-link {
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #005bd3;
+  }
+}
 .delete-button {
   padding-right: 8px;
   width: 40px;
@@ -617,4 +643,8 @@ h1 {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
