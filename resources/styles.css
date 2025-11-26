@@ -3,12 +3,14 @@ body {
   font-style: normal;
   background-color: #f1f1f1;
 }
+
 .container {
   padding: 0 30px;
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
+
 h1 {
   color: #000;
   text-align: center;
@@ -17,6 +19,8 @@ h1 {
   line-height: 32px;
   letter-spacing: -0.2px;
   text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav {
@@ -27,6 +31,7 @@ h1 {
   border-radius: 4px;
   box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.13) inset;
 }
+
 .nav-link {
   color: #000;
   display: flex;
@@ -38,51 +43,67 @@ h1 {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 .active-link {
   border-bottom: 2px solid #29845a;
 }
+
 .table {
   width: 100%;
   background-color: #fff;
   border-radius: 12px;
   border-collapse: collapse;
 }
+
 .table-head {
   text-align: left;
   height: 44px;
   font-weight: normal;
 }
+
 .table-head:first-child {
   padding-left: 8px;
 }
+
 .table-elem {
   height: 44px;
   border-top: 1px solid #e3e3e3;
 }
+
 .delete-icon {
   width: 20px;
   height: 20px;
 }
+
 .table-link {
   color: #005bd3;
   padding-left: 8px;
 }
+
 .delete-button {
   padding-right: 8px;
   width: 40px;
   height: 40px;
 }
+
 .status {
   height: 20px;
 }
-.active {
+
+.setting-status-badge {
   background-color: #cdfee1;
   border-radius: 8px;
   width: 52px;
   color: #0c5132;
   padding: 2px 8px;
 }
-.draft {
+
+.setting-status-badge.active{
+  background-color: #cdfee1;
+  color: #0c5132;
+}
+
+.setting-status-badge.draft{
   background-color: #f2f2f2;
   border-radius: 8px;
   width: 45px;
@@ -97,7 +118,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -20px;
+  /* margin-bottom: -20px; */
 }
 
 .headers-wrapper {
@@ -248,7 +269,9 @@ h1 {
   gap: 16px;
   margin-top: -40px;
   margin-bottom: 20px;
-}.formula {
+}
+
+.formula {
   width: 50%;
   background-color: #fff;
   border-radius: 8px;
@@ -534,4 +557,79 @@ h1 {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+.btn-primary.btn{
+  width: 110px;
+  height: 28px;
+  font-style: medium;
+  font-size: 12px;
+  color: #FFFFFF;
+  font-weight: 550;
+  line-height: 16px;
+  letter-spacing: 0px;
+  background-color: #303030;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 6px 12px; /* Відступи зверху і знизу */
+  gap: 2px;
+}
+
+.header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+.empty-state {
+    width: 100%;
+    min-height: 400px; 
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px 64px;
+}
+
+
+.empty-state-img {
+    width: 148px; 
+    margin-bottom: 27px; 
+}
+
+
+.empty-state-text {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 650;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+
+.empty-state-underline {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+
+#empty-add-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 30%; 
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
 }
