@@ -222,6 +222,13 @@ h1 {
 }
 
 .disabled {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #303030;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+  box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset, 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
   color: #b5b5b5;
   background-color: #000;
   opacity: 0.1;
