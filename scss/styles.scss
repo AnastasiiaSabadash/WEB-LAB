@@ -212,6 +212,10 @@ h1 {
 }
 
 .disabled {
+  padding: 6px 12px;
+  @include btn;
+  box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
+    1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
   color: #b5b5b5;
   background-color: #000;
   opacity: 0.1;

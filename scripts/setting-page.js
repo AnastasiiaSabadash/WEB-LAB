@@ -37,7 +37,7 @@ const removeSetting = (id) => {
 const renderSettingElem = (setting) => {
   const settingTemplateElem = document.querySelector(selectors.settingTemplate);
 
-  const settingTemplateElemCopy = settingTemplateElem.cloneNode(true);
+  const settingTemplateElemCopy = settingTemplateElem.cloneNode(true); // копія DOM-вузла
   settingTemplateElemCopy.classList.remove("hidden");
 
   settingTemplateElemCopy.id = setting.id;
